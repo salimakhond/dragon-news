@@ -30,7 +30,7 @@ const NavigationBar = () => {
                             <Link className='me-2' to={'/about'}>About</Link>
                             <Link className='me-2' to={'/career'}>Career</Link>
                         </Nav>
-                        <Nav className='d-flex align-items-center'>
+                        <Nav className='d-flex gap-3 align-items-center'>
                             {
                                 user && <FaUserCircle style={{ fontSize: '30px' }}></FaUserCircle>
                             }
