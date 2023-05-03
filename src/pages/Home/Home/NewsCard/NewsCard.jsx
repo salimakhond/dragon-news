@@ -33,7 +33,7 @@ const NewsCard = ({ news }) => {
             </Card.Body>
             <Card.Footer className="text-muted d-flex justify-content-between align-items-center">
                 <div className='d-flex gap-2'>
-                    <Rating style={{ maxWidth: 120 }} value={rating} readOnly />
+                    <Rating style={{ maxWidth: 120 }} value={Math.round(rating?.number || 0)} readOnly />
                     <span> {rating?.number}</span>
                 </div>
                 <p><FaEye className='me-2' style={{ height: '24px' }}></FaEye>{total_view}</p>
